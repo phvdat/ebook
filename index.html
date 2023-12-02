@@ -63,7 +63,7 @@
 			pageRendering = true;
 
 			pdfDoc.getPage(num).then(function (page) {
-				let viewport = page.getViewport({ scale: 1 });
+				let viewport = page.getViewport({ scale: 2 });
 				canvas.height = viewport.height;
 				canvas.width = viewport.width;
 
